@@ -1,0 +1,16 @@
+<nav class="navbar navbar-expand-lg" style=""> 
+
+    <img id="logo" height="64" class="mr-2" alt="Logo" src="assets/logo.png"> 
+    <h1 (click)="gotoHome()">LASERVICES</h1>    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <button mat-raised-button *ngIf="!loggedIn" (click)="login()">Login</button>
+            <button mat-raised-button *ngIf="loggedIn" (click)="logout()">Logout</button>            
+        </ul>
+    </div>
+
+</nav>
